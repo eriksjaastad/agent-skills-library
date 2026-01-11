@@ -181,12 +181,20 @@ DO NOT manually implement failed Worker tasks.
 ## Context Bridge
 
 [Provide actual code or pattern to follow - not just description]
+[⚠️ Keep under ~30 lines for smaller models - reference file paths for larger examples]
 
 ```python
-# Example pattern the Worker should follow
+# Example pattern the Worker should follow (keep brief!)
 def example_function():
     """The Worker should create something like this."""
     pass
+```
+
+Or for larger patterns, reference instead of inline:
+
+```markdown
+See `scripts/existing_file.py` (lines 41-75) for the pattern to follow.
+Key elements: [list what to copy]
 ```
 
 ---
@@ -314,6 +322,22 @@ Don't just describe what you want - **show it**:
 - Provide actual code patterns to follow
 - Reference existing files as templates
 - Give the Worker something to copy from
+
+⚠️ **Warning for smaller models (qwen3:4b, etc.):**
+Keep Context Bridge examples **under ~30 lines**. Large code blocks (~80+ lines) can trigger "Thinking..." analysis loops where the model parses the code instead of executing the task. For bigger examples, reference a file path instead of inlining the code:
+
+```markdown
+## Context Bridge
+
+See `scripts/discovery/providers.py` (lines 41-75) for the pattern to follow.
+
+Key elements to copy:
+- Dataclass structure
+- The `_init_*()` pattern
+- Return type annotations
+```
+
+*Learning source: project-tracker Phase 4, Jan 2026 - qwen3:4b timeout on 80-line Context Bridge*
 
 ### 4. Built-in Verification
 
