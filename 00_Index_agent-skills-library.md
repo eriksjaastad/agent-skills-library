@@ -17,26 +17,29 @@ Reusable AI agent skills and playbooks library documenting patterns for Claude, 
 ## Key Components
 
 ### Skills
-- `claude-skills/` - Claude-specific patterns (5 MD files)
+- `claude-skills/` - Claude-specific patterns (6 MD files)
   - Code review techniques
   - Documentation generation
   - Architecture analysis
   - Refactoring workflows
-  - **Audit Whisperer (Draft)** - Contextual hygiene & noise reduction
+  - **Audit Whisperer** - Contextual hygiene & noise reduction
+  - **AI Router Delegation** - Strategic task routing & floor management
 
 ### Rules
-- `cursor-rules/` - Cursor IDE rules (4 MD files)
+- `cursor-rules/` - Cursor IDE rules (5 MD files)
   - Project-specific configurations
   - Code style enforcement
   - AI behavior guidelines
   - Context management
+  - **AI Router Delegation** - Rules for Floor Manager/Worker workflow
 
 ### Playbooks
-- `playbooks/` - Reusable workflows (4 MD files)
+- `playbooks/` - Reusable workflows (5 MD files)
   - Sprint planning
   - Bug investigation
   - Feature development
   - Testing strategies
+  - **AI Router Delegation** - Chain of Command & Atomic Delegation protocol
 
 ### Documentation
 - Root documentation (3 MD files)
