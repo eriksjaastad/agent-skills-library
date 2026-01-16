@@ -43,6 +43,15 @@ class SkillUsage:
 
 
 @dataclass
+class SkillFeedback:
+    """Feedback on a skill from a project's 00_Index file."""
+    skill_name: str
+    project: str
+    feedback: str
+    feedback_type: str  # "improvement" or "new_pattern"
+
+
+@dataclass
 class SkillCandidate:
     """A pattern that might become a skill."""
     pattern: str
@@ -211,6 +220,74 @@ def detect_skill_usage(projects_root: Path) -> dict[str, SkillUsage]:
     return usage
 
 
+def collect_skill_feedback(projects_root: Path) -> list[SkillFeedback]:
+    """Collect skill feedback from 00_Index files in projects."""
+    feedback_list = []
+    
+    for project in find_projects(projects_root):
+        # Find 00_Index files
+        for index_file in project.glob("00_Index_*.md"):
+            try:
+                content = index_file.read_text(encoding='utf-8', errors='ignore')
+            except Exception:
+                continue
+            
+            # Parse feedback sections
+            in_skill_feedback = False
+            in_new_patterns = False
+            current_skill = None
+            
+            for line in content.split('\n'):
+                line = line.strip()
+                
+                # Detect section starts
+                if "Improvements suggested" in line or "Skill Feedback" in line:
+                    in_skill_feedback = True
+                    in_new_patterns = False
+                    continue
+                elif "New patterns emerging" in line or "patterns emerging" in line:
+                    in_new_patterns = True
+                    in_skill_feedback = False
+                    continue
+                elif line.startswith("## ") or line.startswith("---"):
+                    # New section, reset
+                    in_skill_feedback = False
+                    in_new_patterns = False
+                    continue
+                
+                # Parse bullet points
+                if line.startswith("- ") and in_skill_feedback:
+                    # Format: "- skill-name: feedback text"
+                    if ":" in line:
+                        parts = line[2:].split(":", 1)
+                        skill_name = parts[0].strip()
+                        feedback_text = parts[1].strip() if len(parts) > 1 else ""
+                        if feedback_text and feedback_text not in ["[What could be better? Edge cases found?]", ""]:
+                            feedback_list.append(SkillFeedback(
+                                skill_name=skill_name,
+                                project=project.name,
+                                feedback=feedback_text,
+                                feedback_type="improvement"
+                            ))
+                
+                elif line.startswith("- ") and in_new_patterns:
+                    # Format: "- Pattern description: Could this become a skill?"
+                    if ":" in line:
+                        parts = line[2:].split(":", 1)
+                        pattern = parts[0].strip()
+                        notes = parts[1].strip() if len(parts) > 1 else ""
+                        if pattern and pattern not in ["[Pattern description]", ""]:
+                            if notes not in ["[Could this become a skill? Used in other projects?]", ""]:
+                                feedback_list.append(SkillFeedback(
+                                    skill_name=pattern,
+                                    project=project.name,
+                                    feedback=notes,
+                                    feedback_type="new_pattern"
+                                ))
+    
+    return feedback_list
+
+
 def detect_instruction_patterns(projects_root: Path) -> dict[str, list[dict]]:
     """Find repeated instruction patterns across projects."""
     patterns_by_project: dict[str, list[dict]] = defaultdict(list)
@@ -273,6 +350,7 @@ def find_repeated_patterns(patterns_by_project: dict[str, list[dict]]) -> list[S
 def generate_report(
     skill_usage: dict[str, SkillUsage],
     candidates: list[SkillCandidate],
+    feedback: list[SkillFeedback],
     output_json: bool = False
 ) -> None:
     """Generate the detection report."""
@@ -297,6 +375,24 @@ def generate_report(
                 }
                 for c in candidates
             ],
+            'feedback': {
+                'improvements': [
+                    {
+                        'skill': f.skill_name,
+                        'project': f.project,
+                        'feedback': f.feedback,
+                    }
+                    for f in feedback if f.feedback_type == "improvement"
+                ],
+                'new_patterns': [
+                    {
+                        'pattern': f.skill_name,
+                        'project': f.project,
+                        'notes': f.feedback,
+                    }
+                    for f in feedback if f.feedback_type == "new_pattern"
+                ],
+            },
         }
         print(json.dumps(report, indent=2))
         return
@@ -355,12 +451,38 @@ def generate_report(
     else:
         print(f"  {GREEN}No new patterns detected{RESET}")
     
+    # Skill feedback from projects
+    print(f"\n{BOLD}{CYAN}📝 Skill Feedback from Projects{RESET}\n")
+    
+    improvements = [f for f in feedback if f.feedback_type == "improvement"]
+    new_patterns = [f for f in feedback if f.feedback_type == "new_pattern"]
+    
+    if improvements:
+        print(f"  {BOLD}Improvement Suggestions:{RESET}")
+        for fb in improvements:
+            print(f"    {YELLOW}• {fb.skill_name}{RESET} (from {fb.project})")
+            print(f"      \"{fb.feedback}\"")
+    else:
+        print(f"  {GREEN}No improvement suggestions found in 00_Index files{RESET}")
+        print(f"  (Add feedback to 00_Index_*.md → 'Skill Feedback' section)")
+    
+    if new_patterns:
+        print(f"\n  {BOLD}New Patterns Proposed:{RESET}")
+        for fb in new_patterns:
+            print(f"    {YELLOW}• {fb.skill_name}{RESET} (from {fb.project})")
+            print(f"      \"{fb.feedback}\"")
+    else:
+        print(f"\n  {GREEN}No new pattern proposals found{RESET}")
+        print(f"  (Add ideas to 00_Index_*.md → 'New patterns emerging' section)")
+    
     # Summary
     print(f"\n{BOLD}Summary{RESET}")
     print(f"  Skills tracked: {len(skill_usage)}")
     print(f"  Skills in use: {sum(1 for u in skill_usage.values() if u.projects)}")
     print(f"  Promotion candidates: {len(promotable)}")
     print(f"  New pattern candidates: {len(candidates)}")
+    print(f"  Improvement suggestions: {len(improvements)}")
+    print(f"  New pattern proposals: {len(new_patterns)}")
     print()
 
 
@@ -399,8 +521,11 @@ def main() -> int:
     # Find repeated patterns (skill candidates)
     candidates = find_repeated_patterns(patterns)
     
+    # Collect skill feedback from 00_Index files
+    feedback = collect_skill_feedback(args.projects_root)
+    
     # Generate report
-    generate_report(skill_usage, candidates, args.output_json)
+    generate_report(skill_usage, candidates, feedback, args.output_json)
     
     return 0
 
