@@ -1,8 +1,13 @@
-# AI Router Delegation (Claude Skill)
+---
+name: ai-router-delegation
+description: Strategic delegation protocol for Claude acting as a Floor Manager, coordinating AI router tasks with proper tier selection and context injection.
+---
+
+# AI Router Delegation
 
 > **Strategic delegation protocol for Claude acting as a Floor Manager.**
 
-**Follow Playbook:** `/Users/eriksjaastad/projects/agent-skills-library/playbooks/ai-router-delegation/README.md`
+**Follow Playbook:** `../../playbooks/ai-router-delegation/README.md`
 
 ## When to Apply
 When acting as a **Floor Manager** in a project and using the `AIRouter` to execute tasks.
@@ -29,4 +34,9 @@ When acting as a **Floor Manager** in a project and using the `AIRouter` to exec
 ---
 
 *This skill ensures Claude operates as a high-efficiency manager rather than just a code-writer.*
+
+
+## Related Documentation
+
+- [[ai_model_comparison]] - AI models
 

@@ -1,4 +1,9 @@
-# Claude Skill: Financial Integrity Guard
+---
+name: financial-integrity-guard
+description: Gold standard financial engineering review layer ensuring decimal precision, dynamic tax constants, and audit-ready paper trails for money handling code.
+---
+
+# Financial Integrity Guard
 
 > **Adapter for:** Financial, Accounting, and Tax Processing Modules
 > **Version:** 1.0.0
@@ -83,4 +88,20 @@ Verify the "Paper Trail":
 ---
 
 *Institutionalized after the Gold Standard Remediation - Jan 3, 2026*
+
+
+## Related Documentation
+
+- [[cost_management]] - cost management
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
+
+- [[adult_business_compliance]] - adult industry
+- [[ai_model_comparison]] - AI models
+- [[sales_strategy]] - sales/business
+
+
+- [[cost_management]] - cost management
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
 

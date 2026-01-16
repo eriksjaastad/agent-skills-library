@@ -1,6 +1,11 @@
-# PR Review (Claude Skill)
+---
+name: pr-review
+description: Systematic code review process for pull requests, covering code quality, security, testing, and documentation with structured feedback.
+---
 
-> **Placeholder - Claude adapter for PR review playbook**
+# PR Review
+
+> **Claude adapter for PR review playbook**
 
 **Follow:** `agent-skills-library/playbooks/pr-review/`
 
@@ -42,4 +47,32 @@ See playbook for full review process:
 ---
 
 *This is a placeholder. Fill in when playbook is complete.*
+
+
+## Related Documentation
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[security_patterns]] - security
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+
+- [[agent-skills-library/README]] - Agent Skills
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[security_patterns]] - security
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
 

@@ -6,6 +6,54 @@ This directory contains Claude-specific wrappers for playbooks.
 
 ---
 
+## ⚠️ Agent Skills Specification Compliance
+
+All skills in this directory **must** conform to the [Agent Skills Specification](https://agentskills.io/specification).
+
+### Quick Reference
+
+Every `SKILL.md` file **must** have YAML frontmatter:
+
+```yaml
+---
+name: skill-name-here
+description: What this skill does and when to use it.
+---
+```
+
+### Required Fields
+
+| Field | Required | Constraints |
+|-------|----------|-------------|
+| `name` | ✅ Yes | Max 64 chars, lowercase + hyphens only, must match directory name |
+| `description` | ✅ Yes | Max 1024 chars, describes what skill does |
+
+### Validation
+
+Run the validation script before committing:
+
+```bash
+python scripts/validate_skills.py
+```
+
+### Creating New Skills
+
+1. Copy the template:
+   ```bash
+   cp -r claude-skills/_TEMPLATE claude-skills/my-new-skill
+   ```
+
+2. Update the frontmatter in `SKILL.md`:
+   - Set `name:` to match the directory name exactly
+   - Write a clear `description:` with trigger keywords
+
+3. Validate:
+   ```bash
+   python scripts/validate_skills.py
+   ```
+
+---
+
 ## What Are Claude Skills?
 
 **Claude Skills** are instructions for Claude AI that define:
@@ -71,52 +119,21 @@ claude-skills/
 
 A Claude skill adapter should:
 
-1. **Reference the playbook** (canonical source)
-2. **Add Claude-specific output formatting**
-3. **Add Claude-specific constraints**
-4. **Be SHORT** (the playbook has the details)
+1. **Have YAML frontmatter** with `name` and `description` (required by spec)
+2. **Reference the playbook** (canonical source)
+3. **Add Claude-specific output formatting**
+4. **Add Claude-specific constraints**
+5. **Be SHORT** (the playbook has the details)
 
-### Template:
+### Template
 
-```markdown
-# [Skill Name] (Claude Skill)
+Use the template in `_TEMPLATE/SKILL.md`:
 
-**Follow:** `agent-skills-library/playbooks/[skill-name]/`
-
-## When to Apply
-[Describe when Claude should use this skill]
-
-## Claude-Specific Notes
-
-### Output Format
-[How Claude should structure its response]
-
-Example:
-```
-## Analysis
-[Claude's analysis]
-
-## Recommendations
-1. [recommendation]
-2. [recommendation]
-
-## Next Steps
-[what to do next]
+```bash
+cp -r claude-skills/_TEMPLATE claude-skills/my-new-skill
 ```
 
-### Constraints
-- [Any Claude-specific limitations or preferences]
-
-### Resources
-[If resources/ directory exists, reference files here]
-
-## Process
-See the playbook for full process:
-agent-skills-library/playbooks/[skill-name]/README.md
-
-## Quick Reference
-[Optional: short checklist for Claude]
-```
+The template includes all required fields and a suggested structure.
 
 ---
 
@@ -502,4 +519,87 @@ claude-skills/my-skill/
 ---
 
 *Claude skills are thin wrappers. The playbook has the real content.*
+
+
+## Related Documentation
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
+
+- [[automation_patterns]] - automation
+- [[dashboard_architecture]] - dashboard/UI
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[sales_strategy]] - sales/business
+- [[security_patterns]] - security
+- [[testing_strategy]] - testing/QA
+- [[video_analysis_tools]] - video analysis
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
+
+- [[automation_patterns]] - automation
+- [[dashboard_architecture]] - dashboard/UI
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
+
+- [[agent-skills-library/README]] - Agent Skills
+- [[analyze-youtube-videos/README]] - YouTube Analyzer
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
+
+- [[automation_patterns]] - automation
+- [[dashboard_architecture]] - dashboard/UI
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[sales_strategy]] - sales/business
+- [[security_patterns]] - security
+- [[testing_strategy]] - testing/QA
+- [[video_analysis_tools]] - video analysis
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
+
+- [[automation_patterns]] - automation
+- [[dashboard_architecture]] - dashboard/UI
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
+
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
+- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
 

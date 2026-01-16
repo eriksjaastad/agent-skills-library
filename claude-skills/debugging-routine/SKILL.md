@@ -1,6 +1,11 @@
-# Debugging Routine (Claude Skill)
+---
+name: debugging-routine
+description: Systematic debugging workflow for investigating unexpected behavior, identifying root causes, and implementing solutions with clear reasoning.
+---
 
-> **Placeholder - Claude adapter for debugging playbook**
+# Debugging Routine
+
+> **Claude adapter for debugging playbook**
 
 **Follow:** `agent-skills-library/playbooks/debugging-routine/`
 
@@ -47,4 +52,18 @@ See playbook for systematic approach:
 ---
 
 *This is a placeholder. Fill in when playbook is complete.*
+
+
+## Related Documentation
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[research_methodology]] - research
+
+- [[agent-skills-library/README]] - Agent Skills
+
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[research_methodology]] - research
 

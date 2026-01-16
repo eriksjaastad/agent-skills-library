@@ -1,4 +1,9 @@
-# Claude Skill: YouTube Channel Analysis
+---
+name: youtube-channel-analysis
+description: Systematic analysis of YouTube channels using metadata and transcripts to understand content patterns, strategic positioning, and generate personalized video ideas.
+---
+
+# YouTube Channel Analysis
 
 > **Adapter for:** `playbooks/youtube-channel-analysis/`  
 > **Version:** 1.0.0  
@@ -15,7 +20,7 @@
 **What this skill does:**  
 Systematically analyzes YouTube channels using data (metadata + transcripts) to understand content patterns, strategic positioning, and generate personalized video ideas based on proven patterns.
 
-**Canonical instructions:** `/Users/eriksjaastad/projects/agent-skills-library/playbooks/youtube-channel-analysis/README.md`
+**Canonical instructions:** `../../playbooks/youtube-channel-analysis/README.md`
 
 ---
 
@@ -576,4 +581,51 @@ Let's create an action plan for your top 3 ideas:
 ---
 
 *Part of agent-skills-library - see main README for versioning and testing guidelines*
+
+
+## Related Documentation
+
+- [[database_schema]] - database design
+- [[database_setup]] - database
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[performance_optimization]] - performance
+- [[project_planning]] - planning/roadmap
+- [[research_methodology]] - research
+- [[security_patterns]] - security
+- [[testing_strategy]] - testing/QA
+- [[video_analysis_tools]] - video analysis
+
+
+- [[database_schema]] - database design
+- [[database_setup]] - database
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
+
+- [[agent-skills-library/README]] - Agent Skills
+- [[analyze-youtube-videos/README]] - YouTube Analyzer
+
+
+- [[database_schema]] - database design
+- [[database_setup]] - database
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[performance_optimization]] - performance
+- [[project_planning]] - planning/roadmap
+- [[research_methodology]] - research
+- [[security_patterns]] - security
+- [[testing_strategy]] - testing/QA
+- [[video_analysis_tools]] - video analysis
+
+
+- [[database_schema]] - database design
+- [[database_setup]] - database
+- [[prompt_engineering_guide]] - prompt engineering
+- [[queue_processing_guide]] - queue/workflow
 

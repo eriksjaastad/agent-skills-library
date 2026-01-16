@@ -1,4 +1,9 @@
-# Claude Skill: Tax Discovery Engine
+---
+name: tax-discovery-engine
+description: Intelligence layer for tax processing that transforms transactions into IRS-defensible business expenses, identifying AI R&D deductions and generating audit-ready justifications.
+---
+
+# Tax Discovery Engine
 
 > **Adapter for:** Tax Processing Intelligence & AI Router
 > **Version:** 1.0.0
@@ -80,4 +85,32 @@ For every confirmed item, use Sonnet 3.5 to output a **Defense Sentence**:
 ---
 
 *Institutionalized for the AI Intelligence Phase - Jan 3, 2026*
+
+
+## Related Documentation
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[ai_training_methodology]] - AI training
+- [[cost_management]] - cost management
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[ai_model_comparison]] - AI models
+- [[case_studies]] - examples
+- [[research_methodology]] - research
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[ai_training_methodology]] - AI training
+- [[cost_management]] - cost management
+- [[queue_processing_guide]] - queue/workflow
+- [[tax_documentation]] - tax/accounting
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
 

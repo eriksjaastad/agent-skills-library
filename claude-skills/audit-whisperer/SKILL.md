@@ -1,4 +1,9 @@
-# Claude Skill: Audit Whisperer
+---
+name: audit-whisperer
+description: Contextual hygiene and noise reduction layer that filters audit tool output and surfaces relevant tips without blocking development workflow.
+---
+
+# Audit Whisperer
 
 > **Adapter for:** `project-tracker` and `audit-agent` integration
 > **Version:** 0.1.0 (Draft)
@@ -29,7 +34,7 @@ Acts as a "Pragmatic Triage" layer between the fast, high-volume output of the G
 ## The "Whisper" Philosophy
 
 1. **Never Block Development:** No hard errors, no "fail on save," no mandatory fixes.
-2. **Context is King:** If Erik is working on `Holoscape`, whisper about `Holoscape`. Don't whisper about a forgotten tag in a 2-year-old research folder.
+2. **Context is King:** If Erik is working on `holoscape`, whisper about `holoscape`. Don't whisper about a forgotten tag in a 2-year-old research folder.
 3. **Helpfulness over Compliance:** Phrase findings as tips (👂), not violations (⚠️).
 4. **Local-First Inference:** Always try to use the local Ollama model (`llama3.2`) for triage to save costs and maintain privacy.
 
@@ -77,4 +82,60 @@ Generate a "Whisper Summary" for the Project Dashboard:
 ---
 
 *Drafted during the Gold Standard marathon session - Jan 2, 2026*
+
+
+## Related Documentation
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[cost_management]] - cost management
+- [[dashboard_architecture]] - dashboard/UI
+- [[queue_processing_guide]] - queue/workflow
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[adult_business_compliance]] - adult industry
+- [[ai_model_comparison]] - AI models
+- [[holoscape_architecture]] - Holoscape
+- [[research_methodology]] - research
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[cost_management]] - cost management
+- [[dashboard_architecture]] - dashboard/UI
+- [[queue_processing_guide]] - queue/workflow
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[audit-agent/README]] - Audit Agent
+- [[holoscape/README]] - Holoscape
+- [[project-tracker/README]] - Project Tracker
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[cost_management]] - cost management
+- [[dashboard_architecture]] - dashboard/UI
+- [[queue_processing_guide]] - queue/workflow
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[adult_business_compliance]] - adult industry
+- [[ai_model_comparison]] - AI models
+- [[holoscape_architecture]] - Holoscape
+- [[research_methodology]] - research
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
+
+- [[cost_management]] - cost management
+- [[dashboard_architecture]] - dashboard/UI
+- [[queue_processing_guide]] - queue/workflow
+
+
+- [[LOCAL_MODEL_LEARNINGS]] - local AI
 
