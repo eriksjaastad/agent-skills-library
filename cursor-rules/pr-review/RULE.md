@@ -42,3 +42,7 @@ See playbook for full review process:
 
 *This is a placeholder. Fill in when playbook is complete.*
 
+## Related Documentation
+
+- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills

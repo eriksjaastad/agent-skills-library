@@ -15,7 +15,7 @@ When a user or AI agent asks "Where is X?" and the term "X" does not appear in t
 Identify the relationship between the Nickname, the Tool, and the Project.
 - **Nickname:** "Fat AI"
 - **Tool:** `mission_control.py`
-- **Project:** `3D Pose Factory`
+- **Project:** `3d-pose-factory`
 - **Service:** RunPod / Cloudflare R2
 
 ### 3. Update the Registry
@@ -34,3 +34,7 @@ Verify that a global search for "Image Generation" now returns the specific proj
 - Eliminates "hunt and peck" time for returning developers.
 - Enables autonomous agents to find specialized pipelines without human hand-holding.
 - Maintains high-speed momentum during "Clean Slate" project launches.
+
+## Related Documentation
+
+- [3d-pose-factory/README](../ai-model-scratch-build/README.md) - 3D Pose Factory

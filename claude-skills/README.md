@@ -520,86 +520,17 @@ claude-skills/my-skill/
 
 *Claude skills are thin wrappers. The playbook has the real content.*
 
-
 ## Related Documentation
 
 - [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-
-- [[automation_patterns]] - automation
-- [[dashboard_architecture]] - dashboard/UI
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
+- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [Doppler Secrets Management](Documents/reference/DOPPLER_SECRETS_MANAGEMENT.md) - secrets management
+- [Automation Reliability](patterns/automation-reliability.md) - automation
+- [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
 - [[tax_documentation]] - tax/accounting
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
 - [[sales_strategy]] - sales/business
-- [[security_patterns]] - security
-- [[testing_strategy]] - testing/QA
+- [Safety Systems](patterns/safety-systems.md) - security
 - [[video_analysis_tools]] - video analysis
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-
-- [[automation_patterns]] - automation
-- [[dashboard_architecture]] - dashboard/UI
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
-- [[tax_documentation]] - tax/accounting
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-
-- [[agent-skills-library/README]] - Agent Skills
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills
 - [[analyze-youtube-videos/README]] - YouTube Analyzer
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-
-- [[automation_patterns]] - automation
-- [[dashboard_architecture]] - dashboard/UI
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
-- [[tax_documentation]] - tax/accounting
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
-- [[sales_strategy]] - sales/business
-- [[security_patterns]] - security
-- [[testing_strategy]] - testing/QA
-- [[video_analysis_tools]] - video analysis
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-
-- [[automation_patterns]] - automation
-- [[dashboard_architecture]] - dashboard/UI
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
-- [[tax_documentation]] - tax/accounting
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-- [[DOPPLER_SECRETS_MANAGEMENT]] - secrets management
-

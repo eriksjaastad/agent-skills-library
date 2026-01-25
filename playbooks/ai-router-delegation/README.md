@@ -71,3 +71,7 @@ result = AIRouter().chat(
 )
 ```
 
+## Related Documentation
+
+- [Cost Management](Documents/reference/MODEL_COST_COMPARISON.md) - cost management
+- [Safety Systems](patterns/safety-systems.md) - security

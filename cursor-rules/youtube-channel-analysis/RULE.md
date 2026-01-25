@@ -10,7 +10,7 @@
 
 When analyzing YouTube channels in Cursor, follow the canonical playbook:
 
-**Playbook location:** `/Users/eriksjaastad/projects/agent-skills-library/playbooks/youtube-channel-analysis/README.md`
+**Playbook location:** `../../playbooks/youtube-channel-analysis/README.md`
 
 ---
 
@@ -373,3 +373,12 @@ AI: [Executes Phase 1]
 ---
 
 *Part of agent-skills-library - see README for versioning and testing guidelines*
+
+## Related Documentation
+
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
+- [[data_quality_patterns]] - data quality
+- [[research_methodology]] - research
+- [[video_analysis_tools]] - video analysis
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills
+- [[analyze-youtube-videos/README]] - YouTube Analyzer

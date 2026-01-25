@@ -334,3 +334,12 @@ analyze-youtube-videos/       ← Specific agent
 
 *This document captures the first skill creation for future reference.*
 
+## Related Documentation
+
+- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [PROJECT_KICKOFF_GUIDE](../project-scaffolding/Documents/PROJECT_KICKOFF_GUIDE.md) - project setup
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills
+- [analyze-youtube-videos/README](../ai-model-scratch-build/README.md) - YouTube Analyzer
+- [image-workflow/README](../ai-model-scratch-build/README.md) - Image Workflow
+- [Project Scaffolding](../project-scaffolding/README.md) - Project Scaffolding

@@ -366,3 +366,11 @@ When creating a playbook:
 
 *Start with one simple playbook. Build from there.*
 
+## Related Documentation
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [Doppler Secrets Management](Documents/reference/DOPPLER_SECRETS_MANAGEMENT.md) - secrets management
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
+- [[portfolio_content]] - portfolio/career
+- [Safety Systems](patterns/safety-systems.md) - security

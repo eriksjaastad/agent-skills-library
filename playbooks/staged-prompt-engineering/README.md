@@ -404,3 +404,10 @@ See: `project-scaffolding/patterns/learning-loop-pattern.md`
 - **AI Router Delegation** - Choosing which model to use
 - **Learning Loop Pattern** - Capturing what works
 - **AGENTS.md Prompt Template** - Simpler single-prompt format
+
+## Related Documentation
+
+- [[PROJECT_STRUCTURE_STANDARDS]] - project structure
+- [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
+- [Project Scaffolding](../project-scaffolding/README.md) - Project Scaffolding
+- [[project-tracker/README]] - Project Tracker

@@ -13,3 +13,6 @@ This skill enforces a workflow where specifications and automated tests are deve
 - Use BDD tools like Cucumber or Gauge for creating specifications.
 - Integrate with CI/CD pipelines to automate testing processes.
 - Regularly review and update specs alongside changing project requirements.
+
+## Related Documentation
+

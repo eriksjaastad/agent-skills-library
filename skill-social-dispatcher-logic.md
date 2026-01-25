@@ -43,3 +43,9 @@ The AI agent reads the Markdown and outputs a JSON object containing all platfor
 - High-volume social presence with near-zero manual overhead.
 - Maintains a consistent brand voice while respecting platform-specific cultures.
 
+## Related Documentation
+
+- [Cost Management](Documents/reference/MODEL_COST_COMPARISON.md) - cost management
+- [AI Team Orchestration](patterns/ai-team-orchestration.md) - orchestration
+- [Safety Systems](patterns/safety-systems.md) - security
+- [analyze-youtube-videos/README](../ai-model-scratch-build/README.md) - YouTube Analyzer

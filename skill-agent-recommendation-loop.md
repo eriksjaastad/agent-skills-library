@@ -26,3 +26,8 @@ For community-facing roles (like comment responders), the agent must adopt a spe
 - The Conductor acts as an **Editor-in-Chief** rather than a micro-manager.
 - Trust is built with users through transparent but entertaining AI interactions.
 
+
+## Related Documentation
+
+- [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
+

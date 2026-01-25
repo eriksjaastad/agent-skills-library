@@ -10,12 +10,12 @@ This guide shows how to make your projects aware of the agent-skills-library so 
 
 The skills library lives at:
 ```
-/Users/eriksjaastad/projects/agent-skills-library/
+.
 ```
 
 But when you're working in a project:
 ```
-/Users/eriksjaastad/projects/my-project/
+../my-project
 ```
 
 The AI tools don't automatically know about the skills library. You need to tell them.
@@ -30,8 +30,6 @@ The AI tools don't automatically know about the skills library. You need to tell
 | **Claude Code** | Add to `.claude/skills/` |
 | **VS Code** | Add to workspace settings |
 | **Anti-Gravity** | Add to project config |
-| **Kiro** | Add to `.kiro/config` |
-
 ---
 
 ## Cursor Integration
@@ -42,7 +40,7 @@ In your project's `.cursorrules` file:
 
 ```
 # Agent Skills Library
-Reference skills from: /Users/eriksjaastad/projects/agent-skills-library/
+Reference skills from: .
 
 Available skills:
 - PR Review: See agent-skills-library/playbooks/pr-review/
@@ -65,7 +63,7 @@ In Cursor settings (Cmd+,):
 When using project-scaffolding template:
 ```bash
 # In new project
-cp /Users/eriksjaastad/projects/project-scaffolding/templates/.cursorrules.template .cursorrules
+cp ../project-scaffolding/templates/.cursorrules-with-skills.template .cursorrules
 
 # Template already references agent-skills-library
 ```
@@ -79,11 +77,11 @@ cp /Users/eriksjaastad/projects/project-scaffolding/templates/.cursorrules.templ
 Create symlinks from your project to the skills library:
 
 ```bash
-cd /Users/eriksjaastad/projects/my-project
+cd ../my-project
 mkdir -p .claude/skills
 
 # Link specific skills
-ln -s /Users/eriksjaastad/projects/agent-skills-library/claude-skills/pr-review .claude/skills/pr-review
+ln -s claude-skills/pr-review .claude/skills/pr-review
 ```
 
 **Pros:** Skills stay in sync with library  
@@ -108,7 +106,7 @@ description: Access skills from the central agent-skills-library
 # Skills Library Reference
 
 This project uses skills from the central library at:
-/Users/eriksjaastad/projects/agent-skills-library/
+.
 
 ## Available Skills
 
@@ -130,8 +128,8 @@ Add to `.vscode/settings.json`:
 ```json
 {
   "aiAssistant.contextFiles": [
-    "/Users/eriksjaastad/projects/agent-skills-library/playbooks/pr-review/README.md",
-    "/Users/eriksjaastad/projects/agent-skills-library/playbooks/debugging-routine/README.md"
+    "playbooks/pr-review/README.md",
+    "playbooks/debugging-routine/README.md"
   ],
   "aiAssistant.instructions": "Reference skills from agent-skills-library when applicable"
 }
@@ -146,27 +144,11 @@ Add to your Anti-Gravity project config:
 ```yaml
 # .antigravity/config.yaml
 skills:
-  library_path: /Users/eriksjaastad/projects/agent-skills-library
+  library_path: .
   enabled_skills:
     - pr-review
     - debugging-routine
     - code-quality
-```
-
----
-
-## Kiro Integration
-
-Add to `.kiro/config`:
-
-```yaml
-skills_library: /Users/eriksjaastad/projects/agent-skills-library
-
-context:
-  - path: agent-skills-library/playbooks/pr-review/
-    when: reviewing_code
-  - path: agent-skills-library/playbooks/debugging-routine/
-    when: debugging
 ```
 
 ---
@@ -180,7 +162,7 @@ When creating new projects, the template should include skills library reference
 **`.cursorrules.template`:**
 ```
 # Agent Skills Library
-Reference: /Users/eriksjaastad/projects/agent-skills-library/
+Reference: .
 
 [Include key skills relevant to most projects]
 ```
@@ -191,7 +173,7 @@ Reference: /Users/eriksjaastad/projects/agent-skills-library/
 
 This project uses skills from the central agent-skills-library.
 
-See: /Users/eriksjaastad/projects/agent-skills-library/
+See: .
 ```
 
 ---
@@ -245,3 +227,9 @@ After adding skills library to a project:
 *Created: December 29, 2024*  
 *Update this guide as you add new tools/editors*
 
+## Related Documentation
+
+- [PROJECT_KICKOFF_GUIDE](../project-scaffolding/Documents/PROJECT_KICKOFF_GUIDE.md) - project setup
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills
+- [Project Scaffolding](../project-scaffolding/README.md) - Project Scaffolding

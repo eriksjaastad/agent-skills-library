@@ -43,3 +43,7 @@ See playbook for systematic approach:
 
 *This is a placeholder. Fill in when playbook is complete.*
 
+## Related Documentation
+
+- [[research_methodology]] - research
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills

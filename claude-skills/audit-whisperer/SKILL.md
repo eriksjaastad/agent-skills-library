@@ -83,59 +83,14 @@ Generate a "Whisper Summary" for the Project Dashboard:
 
 *Drafted during the Gold Standard marathon session - Jan 2, 2026*
 
-
 ## Related Documentation
 
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
-- [[cost_management]] - cost management
-- [[dashboard_architecture]] - dashboard/UI
-- [[queue_processing_guide]] - queue/workflow
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
+- [Local Model Learnings](Documents/reference/LOCAL_MODEL_LEARNINGS.md) - local AI
+- [Cost Management](Documents/reference/MODEL_COST_COMPARISON.md) - cost management
 - [[adult_business_compliance]] - adult industry
-- [[ai_model_comparison]] - AI models
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
 - [[holoscape_architecture]] - Holoscape
 - [[research_methodology]] - research
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
-- [[cost_management]] - cost management
-- [[dashboard_architecture]] - dashboard/UI
-- [[queue_processing_guide]] - queue/workflow
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
 - [[audit-agent/README]] - Audit Agent
 - [[holoscape/README]] - Holoscape
 - [[project-tracker/README]] - Project Tracker
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
-- [[cost_management]] - cost management
-- [[dashboard_architecture]] - dashboard/UI
-- [[queue_processing_guide]] - queue/workflow
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
-- [[adult_business_compliance]] - adult industry
-- [[ai_model_comparison]] - AI models
-- [[holoscape_architecture]] - Holoscape
-- [[research_methodology]] - research
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
-- [[cost_management]] - cost management
-- [[dashboard_architecture]] - dashboard/UI
-- [[queue_processing_guide]] - queue/workflow
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-

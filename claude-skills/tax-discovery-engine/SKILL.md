@@ -86,31 +86,11 @@ For every confirmed item, use Sonnet 3.5 to output a **Defense Sentence**:
 
 *Institutionalized for the AI Intelligence Phase - Jan 3, 2026*
 
-
 ## Related Documentation
 
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
+- [Local Model Learnings](Documents/reference/LOCAL_MODEL_LEARNINGS.md) - local AI
 - [[ai_training_methodology]] - AI training
-- [[cost_management]] - cost management
-- [[queue_processing_guide]] - queue/workflow
+- [Cost Management](Documents/reference/MODEL_COST_COMPARISON.md) - cost management
 - [[tax_documentation]] - tax/accounting
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
 - [[research_methodology]] - research
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-
-- [[ai_training_methodology]] - AI training
-- [[cost_management]] - cost management
-- [[queue_processing_guide]] - queue/workflow
-- [[tax_documentation]] - tax/accounting
-
-
-- [[LOCAL_MODEL_LEARNINGS]] - local AI
-

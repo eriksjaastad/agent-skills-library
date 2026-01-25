@@ -89,19 +89,10 @@ Verify the "Paper Trail":
 
 *Institutionalized after the Gold Standard Remediation - Jan 3, 2026*
 
-
 ## Related Documentation
 
-- [[cost_management]] - cost management
-- [[queue_processing_guide]] - queue/workflow
+- [Cost Management](Documents/reference/MODEL_COST_COMPARISON.md) - cost management
 - [[tax_documentation]] - tax/accounting
-
 - [[adult_business_compliance]] - adult industry
-- [[ai_model_comparison]] - AI models
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
 - [[sales_strategy]] - sales/business
-
-
-- [[cost_management]] - cost management
-- [[queue_processing_guide]] - queue/workflow
-- [[tax_documentation]] - tax/accounting
-

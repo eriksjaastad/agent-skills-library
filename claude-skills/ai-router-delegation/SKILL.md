@@ -38,5 +38,5 @@ When acting as a **Floor Manager** in a project and using the `AIRouter` to exec
 
 ## Related Documentation
 
-- [[ai_model_comparison]] - AI models
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
 

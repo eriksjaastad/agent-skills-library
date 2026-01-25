@@ -48,31 +48,10 @@ See playbook for full review process:
 
 *This is a placeholder. Fill in when playbook is complete.*
 
-
 ## Related Documentation
 
 - [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
-- [[security_patterns]] - security
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-
-- [[agent-skills-library/README]] - Agent Skills
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
-- [[security_patterns]] - security
-
-
-- [[CODE_QUALITY_STANDARDS]] - code standards
-- [[CODE_REVIEW_ANTI_PATTERNS]] - code review
-
+- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
+- [Safety Systems](patterns/safety-systems.md) - security
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills

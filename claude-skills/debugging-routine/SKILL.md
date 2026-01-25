@@ -53,17 +53,8 @@ See playbook for systematic approach:
 
 *This is a placeholder. Fill in when playbook is complete.*
 
-
 ## Related Documentation
 
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
 - [[research_methodology]] - research
-
-- [[agent-skills-library/README]] - Agent Skills
-
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
-- [[research_methodology]] - research
-
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills

@@ -582,50 +582,12 @@ Let's create an action plan for your top 3 ideas:
 
 *Part of agent-skills-library - see main README for versioning and testing guidelines*
 
-
 ## Related Documentation
 
-- [[database_schema]] - database design
-- [[database_setup]] - database
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
-- [[performance_optimization]] - performance
-- [[project_planning]] - planning/roadmap
+- [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
 - [[research_methodology]] - research
-- [[security_patterns]] - security
-- [[testing_strategy]] - testing/QA
+- [Safety Systems](patterns/safety-systems.md) - security
 - [[video_analysis_tools]] - video analysis
-
-
-- [[database_schema]] - database design
-- [[database_setup]] - database
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
-
-- [[agent-skills-library/README]] - Agent Skills
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills
 - [[analyze-youtube-videos/README]] - YouTube Analyzer
-
-
-- [[database_schema]] - database design
-- [[database_setup]] - database
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
-
-- [[ai_model_comparison]] - AI models
-- [[case_studies]] - examples
-- [[performance_optimization]] - performance
-- [[project_planning]] - planning/roadmap
-- [[research_methodology]] - research
-- [[security_patterns]] - security
-- [[testing_strategy]] - testing/QA
-- [[video_analysis_tools]] - video analysis
-
-
-- [[database_schema]] - database design
-- [[database_setup]] - database
-- [[prompt_engineering_guide]] - prompt engineering
-- [[queue_processing_guide]] - queue/workflow
-

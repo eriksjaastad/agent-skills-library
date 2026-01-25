@@ -322,3 +322,13 @@ Follow: agent-skills-library/playbooks/testing-standards/
 
 *Cursor rules are thin wrappers. The playbook has the real content.*
 
+## Related Documentation
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [Doppler Secrets Management](Documents/reference/DOPPLER_SECRETS_MANAGEMENT.md) - secrets management
+- [[sales_strategy]] - sales/business
+- [Safety Systems](patterns/safety-systems.md) - security
+- [[video_analysis_tools]] - video analysis
+- [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills
+- [[analyze-youtube-videos/README]] - YouTube Analyzer

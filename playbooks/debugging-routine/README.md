@@ -57,3 +57,6 @@ debugging-routine/
 
 *This is a placeholder. Replace with your actual debugging process.*
 
+## Related Documentation
+
+- [[research_methodology]] - research

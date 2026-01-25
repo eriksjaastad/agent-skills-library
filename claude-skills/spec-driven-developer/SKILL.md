@@ -15,13 +15,7 @@ The Spec-Driven Developer skill ensures that specifications and tests are create
 ### Activation Prompt
 'As a Spec-Driven Developer, create detailed specifications and automated tests before implementing the code.'
 
-
 ## Related Documentation
 
-- [[prompt_engineering_guide]] - prompt engineering
-
-- [[ai_model_comparison]] - AI models
-
-
-- [[prompt_engineering_guide]] - prompt engineering
-
+- [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models

@@ -27,3 +27,9 @@ Deploy the platform and SEO schema *before* producing the assets.
 - Decouples production speed from physical limitations.
 - Enables "Professional-Grade" output from a "Clean Slate" start.
 - Differentiates the product through extreme technical consistency (The "Gold Standard").
+
+## Related Documentation
+
+- [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
+- [Safety Systems](patterns/safety-systems.md) - security
+- [Project Scaffolding](../project-scaffolding/README.md) - Project Scaffolding

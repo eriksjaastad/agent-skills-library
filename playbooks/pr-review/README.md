@@ -51,3 +51,8 @@ pr-review/
 
 *This is a placeholder. Replace with your actual PR review process.*
 
+## Related Documentation
+
+- [[CODE_QUALITY_STANDARDS]] - code standards
+- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [Safety Systems](patterns/safety-systems.md) - security

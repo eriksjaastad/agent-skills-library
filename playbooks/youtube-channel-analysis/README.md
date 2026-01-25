@@ -778,3 +778,13 @@ This playbook is tool-agnostic. Refer to tool-specific adapters for:
 
 *This is a living document. Update as you learn better patterns.*
 
+## Related Documentation
+
+- [Automation Reliability](patterns/automation-reliability.md) - automation
+- [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
+- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
+- [[research_methodology]] - research
+- [[sales_strategy]] - sales/business
+- [Safety Systems](patterns/safety-systems.md) - security
+- [[video_analysis_tools]] - video analysis
+- [[analyze-youtube-videos/README]] - YouTube Analyzer
