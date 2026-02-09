@@ -1,3 +1,29 @@
+
+<!-- SCAFFOLD:START - Do not edit between markers -->
+# agent-skills-library
+
+Brief description of the project's purpose
+
+## Quick Start
+
+```bash
+# Setup
+pip install -r requirements.txt
+
+# Run
+python main.py
+```
+
+## Documentation
+
+See the `Documents/` directory for detailed documentation.
+
+## Status
+
+- **Current Phase:** Foundation
+- **Status:** #status/active
+
+<!-- SCAFFOLD:END - Custom content below is preserved -->
 # Agent Skills Library
 
 > **One source of truth, many tools**
@@ -20,10 +46,14 @@ A library of reusable AI instructions (playbooks) with tool-specific adapters.
 **How does Claude use it?**  
 `/claude-skills/` - Thin wrappers that reference playbooks.
 
+**How does Antigravity use it?**  
+`/antigravity-rules/` - Thin wrappers that reference playbooks.
+
 **How to add a new skill:**
 1. Create `playbooks/my-skill/README.md` (the canonical instructions)
 2. Create `cursor-rules/my-skill/RULE.md` (Cursor wrapper)
 3. Create `claude-skills/my-skill/SKILL.md` (Claude wrapper)
+4. Create `antigravity-rules/my-skill/RULE.md` (Antigravity wrapper)
 
 **Naming convention:**  
 `lowercase-with-dashes` (e.g., `pr-review`, `debugging-routine`)
@@ -40,7 +70,7 @@ Reusable AI agent skills and playbooks library documenting patterns for Claude, 
 ## Key Components
 
 ### Skills
-- `claude-skills/` - Claude-specific patterns (6 MD files)
+- `claude-skills/` - Claude-specific patterns (27 skills)
   - Code review techniques
   - Documentation generation
   - Architecture analysis
@@ -49,15 +79,20 @@ Reusable AI agent skills and playbooks library documenting patterns for Claude, 
   - **AI Router Delegation** - Strategic task routing & floor management
 
 ### Rules
-- `cursor-rules/` - Cursor IDE rules (5 MD files)
+- `cursor-rules/` - Cursor IDE rules (25 rules)
   - Project-specific configurations
   - Code style enforcement
   - AI behavior guidelines
   - Context management
   - **AI Router Delegation** - Rules for Floor Manager/Worker workflow
 
+- `antigravity-rules/` - Antigravity agent rules (10+ adapters)
+  - Integration guides and workflows
+  - Agent-specific patterns
+  - Links to canonical playbooks
+
 ### Playbooks
-- `playbooks/` - Reusable workflows (5 MD files)
+- `playbooks/` - Reusable workflows (26 playbooks)
   - Sprint planning
   - Bug investigation
   - Feature development
@@ -287,32 +322,3 @@ scaffolding_date: 2026-01-14
 - [skill-niche-scarcity-engineering.md](skill-niche-scarcity-engineering.md)
 - [skill-resource-aliasing-protocol.md](skill-resource-aliasing-protocol.md)
 - [skill-social-dispatcher-logic.md](skill-social-dispatcher-logic.md)
-
-
-<!-- project-scaffolding template appended -->
-
-# [PROJECT_NAME]
-
-[Brief 2-3 sentence description of the project.]
-
-## Quick Start
-
-### Installation
-```bash
-# [Add installation steps here]
-```
-
-### Usage
-```bash
-# [Add usage steps here]
-```
-
-## Documentation
-See the `Documents/` directory for detailed documentation:
-- [Architecture Overview](Documents/ARCHITECTURE_OVERVIEW.md)
-- [Operations Guide](Documents/OPERATIONS_GUIDE.md)
-
-## Status
-- **Current Phase:** [Phase Name]
-- **Status:** #status/active
-

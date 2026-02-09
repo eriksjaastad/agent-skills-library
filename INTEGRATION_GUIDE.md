@@ -58,15 +58,15 @@ In Cursor settings (Cmd+,):
 **Pros:** Available in all projects  
 **Cons:** Can't customize per project
 
-### Method 3: Include from Template
+### Method 3: Automated Scaffolding (Recommended)
 
-When using project-scaffolding template:
+When starting a new project, use the automated scaffolding CLI:
+
 ```bash
-# In new project
-cp ../project-scaffolding/templates/.cursorrules-with-skills.template .cursorrules
-
-# Template already references agent-skills-library
+uv run "$PROJECTS_ROOT/project-scaffolding/scaffold_cli.py" apply "my-new-project"
 ```
+
+This automatically includes the standard `.cursorrules` and `CLAUDE.md` which are configured to reference the agent-skills-library.
 
 ---
 
@@ -139,17 +139,47 @@ Add to `.vscode/settings.json`:
 
 ## Anti-Gravity Integration
 
-Add to your Anti-Gravity project config:
+### Method 1: Direct Adapter Reference (Recommended)
+
+Antigravity rules are available in `agent-skills-library/antigravity-rules/`:
 
 ```yaml
-# .antigravity/config.yaml
-skills:
-  library_path: .
-  enabled_skills:
-    - pr-review
-    - debugging-routine
-    - code-quality
+# Reference from your Antigravity project:
+# .agent/rules/instructions.md
+
+Include adapters by path:
+- agent-skills-library/antigravity-rules/pr-review/
+- agent-skills-library/antigravity-rules/debugging-routine/
+- agent-skills-library/antigravity-rules/commit/
 ```
+
+### Method 2: Copy Adapter to Project
+
+If you prefer to include adapters locally:
+
+```bash
+# Copy a specific adapter
+cp -r agent-skills-library/antigravity-rules/pr-review/ .agent/rules/adapters/
+
+# Load in your .agent/rules/instructions.md
+```
+
+### Available Antigravity Adapters
+
+Currently available in `antigravity-rules/`:
+- commit
+- pr
+- pr-review
+- audit
+- debugging-routine
+- tasks
+- judge
+- propose
+- strategy
+- work
+- (plus template for creating new adapters)
+
+Each adapter follows the canonical playbook and can be integrated into Antigravity projects.
 
 ---
 

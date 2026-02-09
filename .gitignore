@@ -1,5 +1,5 @@
-<!-- project-scaffolding template appended -->
 
+<!-- SCAFFOLD:START - Do not edit between markers -->
 # Virtual environments
 venv/
 env/
@@ -28,3 +28,5 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+
+<!-- SCAFFOLD:END - Custom content below is preserved -->

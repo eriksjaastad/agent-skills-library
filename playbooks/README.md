@@ -296,9 +296,21 @@ Functions should be small (max 50 lines) because:
 
 ## Current Playbooks
 
-### Planned/Placeholder:
+### Workflow Phase Playbooks (6-Phase Development Workflow)
+- `strategy/` - Phase 1: PRD creation with the Conductor (Erik)
+- `trace/` - Phase 2.5: Verify PRD to Kiro traceability after spec generation
+- `propose/` - Phase 3: Create PROPOSAL_FINAL.md from Kiro specs
+- `handoff/` - Phase 4: Pre-execution infrastructure verification
+- `work/` - Phase 5: Task execution against tracked Kanban items
+- `audit/` - Phase 5: Code review gate before Judge verdict
+- `judge/` - Phase 5: Final PASS/FAIL verdict before merge
+
+### Domain-Specific Playbooks
 - `pr-review/` - How to review pull requests
 - `debugging-routine/` - Systematic debugging approach
+- `youtube-channel-analysis/` - YouTube data analysis
+- `spec-driven-developer/` - Kiro spec-driven development
+- `ai-router-delegation/` - AI model routing and delegation
 
 ### To Add:
 - (Add your own as you identify repeating patterns)

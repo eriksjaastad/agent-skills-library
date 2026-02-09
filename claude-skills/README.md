@@ -390,7 +390,16 @@ Output format preferences:
 
 ## Current Skills
 
-### Current Skills:
+### Workflow Phase Skills (6-Phase Development Workflow)
+- `strategy/` - Phase 1: Create PRDs for new features with Erik.
+- `trace/` - Phase 2.5: Verify PRD to Kiro traceability after spec generation.
+- `propose/` - Phase 3: Create PROPOSAL_FINAL.md from Kiro specs for Agent Hub.
+- `handoff/` - Phase 4: Verify infrastructure before Floor Manager execution.
+- `work/` - Phase 5: Execute implementation tasks against tracked Kanban items.
+- `audit/` - Phase 5: Run automated code review gate before Judge verdict.
+- `judge/` - Phase 5: Issue final PASS/FAIL verdict before merge.
+
+### Domain-Specific Skills
 - `financial-integrity-guard/` - Institutionalizes "Gold Standard" financial engineering practices.
 - `tax-discovery-engine/` - AI-optimized write-off hunting and audit justification.
 - `audit-whisperer/` - Triage and filtering for project audit output.
