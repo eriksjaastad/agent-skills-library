@@ -16,7 +16,7 @@ python main.py
 
 ## Documentation
 
-See the `Documents/` directory for detailed documentation.
+See the `.agent/rules/` directory for detailed documentation.
 
 ## Status
 
@@ -307,9 +307,9 @@ scaffolding_date: 2026-01-14
 
 ## Related Documentation
 
-- [Code Review Anti-Patterns](Documents/reference/CODE_REVIEW_ANTI_PATTERNS.md) - code review
+- [Code Review Anti-Patterns](../.agent/rules/CODE_REVIEW_ANTI_PATTERNS.md) - code review
 - [Tiered AI Sprint Planning](patterns/tiered-ai-sprint-planning.md) - prompt engineering
-- [AI Model Cost Comparison](Documents/reference/MODEL_COST_COMPARISON.md) - AI models
+- [AI Model Cost Comparison](../.agent/rules/MODEL_COST_COMPARISON.md) - AI models
 - [Agent Skills Library](../agent-skills-library/README.md) - Agent Skills
 - [muffinpanrecipes/README](../ai-model-scratch-build/README.md) - Muffin Pan Recipes
 - [AGENTS.md](AGENTS.md)
