@@ -219,6 +219,22 @@ EOF
 
 ---
 
+## Common Mistakes
+
+These patterns cause CI review rejections. Avoid them:
+
+1. **Multi-feature PRs:** One PR = one concern. If your commits span multiple types (feat + fix + docs in one PR), the reviewer WILL flag it. Split unrelated changes into separate PRs.
+
+2. **Missing labels:** Always include `--label` in the `pr create` command. The CI label check will fail without it. Don't add labels as a separate step — include them at creation time.
+
+3. **Large diffs:** If the diff exceeds ~500 lines, the automated reviewer may produce empty or truncated output. Split the PR into smaller, focused chunks.
+
+4. **Hardcoded paths:** `/Users/eriksjaastad/` in code gets flagged EVERY time. Use relative paths, `$HOME`, `~`, or environment variables instead.
+
+5. **Missing tests:** The reviewer checks for test coverage on new code. If you add functionality without tests, expect to be asked for them.
+
+---
+
 ## Related
 
 - [GitHub CLI Documentation](https://cli.github.com/manual/gh_pr_create)
